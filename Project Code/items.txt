@@ -1,0 +1,358 @@
+Book|The Silent Patient|Alex Michaelides|9781250301697|Fiction|100001|15.99|Out|14
+Book|Educated: A Memoir|Tara Westover|9780399590504|Biography|100002|18.5|Out|14
+Book|Where the Crawdads Sing|Delia Owens|9780735219090|Fiction|100003|14|Out|14
+Book|Becoming|Michelle Obama|9781524763138|Biography|100004|20|In|14
+Book|To Kill a Mockingbird|Harper Lee|9780061120084|Fiction|100005|9.99|Out|14
+Book|1984|George Orwell|9780451524935|Fiction|100006|8.99|Out|14
+Book|The Great Gatsby|F. Scott Fitzgerald|9780743273565|Fiction|100007|10.5|Out|14
+Book|The Hobbit|J.R.R. Tolkien|9780345339683|Fantasy|100008|12.99|Out|14
+Book|Pride and Prejudice|Jane Austen|9780141439518|Fiction|100009|7.5|Out|14
+Book|The Catcher in the Rye|J.D. Salinger|9780316769488|Fiction|100010|9.25|Out|14
+Book|The Lord of the Rings|J.R.R. Tolkien|9780618640157|Fantasy|100011|22.5|In|14
+Book|Harry Potter and the Sorcerer's Stone|J.K. Rowling|9780590353427|Fantasy|100012|11.99|Out|14
+Book|The Alchemist|Paulo Coelho|9780062315007|Fiction|100013|13|Out|14
+Book|The Da Vinci Code|Dan Brown|9780307474278|Thriller|100014|9.99|Out|14
+Book|The Hunger Games|Suzanne Collins|9780439023528|Sci-Fi|100015|10.99|In|14
+Book|Sapiens: A Brief History of Humankind|Yuval Noah Harari|9780062316097|History|100016|21|Out|14
+Book|Atomic Habits|James Clear|9780735211292|Self-Help|100017|16.2|Out|14
+Book|Dune|Frank Herbert|9780441013593|Sci-Fi|100018|15.5|Out|14
+Book|The Martian|Andy Weir|9780804139021|Sci-Fi|100019|14.5|In|14
+Book|The Road|Cormac McCarthy|9780307387899|Fiction|100020|13.75|Out|14
+Book|Brave New World|Aldous Huxley|9780060850524|Fiction|100021|11.5|Out|14
+Book|Gone Girl|Gillian Flynn|9780307588371|Thriller|100022|14|Out|14
+Book|The Girl with the Dragon Tattoo|Stieg Larsson|9780307949486|Thriller|100023|12.5|In|14
+Book|The Help|Kathryn Stockett|9780425232200|Fiction|100024|16|Out|14
+Book|The Kite Runner|Khaled Hosseini|9781594631931|Fiction|100025|15|Out|14
+Book|A Man Called Ove|Fredrik Backman|9781476738024|Fiction|100026|14.5|Out|14
+Book|Fahrenheit 451|Ray Bradbury|9781451673319|Sci-Fi|100027|10.99|In|14
+Book|The Nightingale|Kristin Hannah|9780312577223|Historical Fiction|100028|17|Out|14
+Book|The Goldfinch|Donna Tartt|9780316055437|Fiction|100029|18.5|Out|14
+Book|Circe|Madeline Miller|9780316556347|Fantasy|100030|15.75|Out|14
+Book|The Song of Achilles|Madeline Miller|9780062060624|Fantasy|100031|14.99|In|14
+Book|The Vanishing Half|Brit Bennett|9780525536291|Fiction|100032|16.2|Out|14
+Book|Anxious People|Fredrik Backman|9781501160837|Fiction|100033|17.5|Out|14
+Book|Project Hail Mary|Andy Weir|9780593135204|Sci-Fi|100034|18|Out|14
+Book|The Midnight Library|Matt Haig|9780525559474|Fiction|100035|15.6|In|14
+Book|Klara and the Sun|Kazuo Ishiguro|9780593318171|Sci-Fi|100036|16.8|Out|14
+Book|Where the Wild Things Are|Maurice Sendak|9780060254926|Children|100037|8.99|Out|14
+Book|Goodnight Moon|Margaret Wise Brown|9780060775858|Children|100038|7.99|Out|14
+Book|The Very Hungry Caterpillar|Eric Carle|9780399226908|Children|100039|9.99|In|14
+Book|Brown Bear, Brown Bear, What Do You See?|Bill Martin Jr.|9780805047905|Children|100040|7.5|Out|14
+Book|The Giving Tree|Shel Silverstein|9780060256654|Children|100041|12.5|Out|14
+Book|Oh, the Places You'll Go!|Dr. Seuss|9780679805274|Children|100042|11.37|Out|14
+Book|The Chronicles of Narnia|C.S. Lewis|9780066238500|Fantasy|100043|25|In|14
+Book|A Wrinkle in Time|Madeleine L'Engle|9780312367541|Sci-Fi|100044|8.5|Out|14
+Book|The Giver|Lois Lowry|9780544336261|YA Fiction|100045|9.5|Out|14
+Book|Holes|Louis Sachar|9780440414803|YA Fiction|100046|7.99|Out|14
+Book|The Outsiders|S.E. Hinton|9780142407332|YA Fiction|100047|10|In|14
+Book|The Perks of Being a Wallflower|Stephen Chbosky|9781451696196|YA Fiction|100048|12|Out|14
+Book|The Book Thief|Markus Zusak|9780375842207|Historical Fiction|100049|14|Out|14
+Book|The Fault in Our Stars|John Green|9780525478812|YA Fiction|100050|13|Out|14
+Book|The Hate U Give|Angie Thomas|9780062498533|YA Fiction|100051|11.99|In|14
+Book|Wonder|R.J. Palacio|9780375869020|Children|100052|15.5|Out|14
+Book|Charlotte's Web|E.B. White|9780064400558|Children|100053|7.99|Out|14
+Book|Matilda|Roald Dahl|9780142410381|Children|100054|8.99|Out|14
+Book|The Secret Garden|Frances Hodgson Burnett|9780060888565|Classic|100055|6.99|In|14
+Book|Little Women|Louisa May Alcott|9780147514011|Classic|100056|10.5|Out|14
+Book|The Adventures of Huckleberry Finn|Mark Twain|9780486280615|Classic|100057|5|Out|14
+Book|The Call of the Wild|Jack London|9780486264721|Classic|100058|4.5|Out|14
+Book|Frankenstein|Mary Shelley|9780486282114|Gothic Fiction|100059|6|In|14
+Book|Dracula|Bram Stoker|9780486411095|Gothic Fiction|100060|7|Out|14
+Book|Moby Dick|Herman Melville|9780142437247|Classic|100061|11|Out|14
+Book|War and Peace|Leo Tolstoy|9781400079988|Historical Fiction|100062|19.99|Out|14
+Book|Anna Karenina|Leo Tolstoy|9780143035008|Classic|100063|16|In|14
+Book|Crime and Punishment|Fyodor Dostoevsky|9780486415871|Classic|100064|9|Out|14
+Book|The Brothers Karamazov|Fyodor Dostoevsky|9780486437910|Classic|100065|12|Out|14
+Book|Don Quixote|Miguel de Cervantes|9780060934347|Classic|100066|15|Out|14
+Book|One Hundred Years of Solitude|Gabriel Garcia Marquez|9780060883287|Fiction|100067|14|In|14
+Book|Love in the Time of Cholera|Gabriel Garcia Marquez|9780307389732|Fiction|100068|13.5|Out|14
+Book|The Stranger|Albert Camus|9780679720218|Philosophy|100069|11|Out|14
+Book|The Plague|Albert Camus|9780679720218|Fiction|100070|12.5|Out|14
+Book|The Trial|Franz Kafka|9780805210400|Fiction|100071|10|In|14
+Book|The Metamorphosis|Franz Kafka|9780553213690|Fiction|100072|5.99|Out|14
+Book|Ulysses|James Joyce|9780679722762|Modernist|100073|18|Out|14
+Book|A Portrait of the Artist as a Young Man|James Joyce|9780486280509|Modernist|100074|7.5|Out|14
+Book|Dubliners|James Joyce|9780486268705|Classic|100075|6.5|In|14
+Book|On the Road|Jack Kerouac|9780140042597|Fiction|100076|13|Out|14
+Book|Slaughterhouse-Five|Kurt Vonnegut|9780385333849|Sci-Fi|100077|12|Out|14
+Book|Cat's Cradle|Kurt Vonnegut|9780385333481|Sci-Fi|100078|11|Out|14
+Book|Breakfast of Champions|Kurt Vonnegut|9780385334238|Fiction|100079|10.5|In|14
+Book|Catch-22|Joseph Heller|9781451626650|Fiction|100080|15|Out|14
+Book|The Sun Also Rises|Ernest Hemingway|9780743297332|Classic|100081|14|Out|14
+Book|A Farewell to Arms|Ernest Hemingway|9780684801469|Classic|100082|13|Out|14
+Book|For Whom the Bell Tolls|Ernest Hemingway|9780684803357|Historical Fiction|100083|16|In|14
+Book|The Old Man and the Sea|Ernest Hemingway|9780684801223|Classic|100084|10|Out|14
+Book|The Grapes of Wrath|John Steinbeck|9780142000663|Classic|100085|15|Out|14
+Book|Of Mice and Men|John Steinbeck|9780140177398|Classic|100086|9|Out|14
+Book|East of Eden|John Steinbeck|9780142000656|Classic|100087|17|In|14
+Book|The Pearl|John Steinbeck|9780140177374|Classic|100088|8|Out|14
+Book|As I Lay Dying|William Faulkner|9780679732259|Modernist|100089|12|Out|14
+Book|The Sound and the Fury|William Faulkner|9780679732242|Modernist|100090|13|Out|14
+Book|Absalom, Absalom!|William Faulkner|9780679732181|Gothic Fiction|100091|14|In|14
+Book|Light in August|William Faulkner|9780679732266|Modernist|100092|13.5|Out|14
+Book|Go Down, Moses|William Faulkner|9780679732174|Fiction|100093|12.5|Out|14
+Book|The Color Purple|Alice Walker|9780156028356|Fiction|100094|14|Out|14
+Book|Beloved|Toni Morrison|9781400033416|Historical Fiction|100095|15|In|14
+Book|Song of Solomon|Toni Morrison|9781400033423|Fiction|100096|14.5|Out|14
+Book|The Bluest Eye|Toni Morrison|9780307278449|Fiction|100097|13|Out|14
+Book|Sula|Toni Morrison|9781400033430|Fiction|100098|12|Out|14
+Book|Jazz|Toni Morrison|9781400076215|Historical Fiction|100099|13.5|In|14
+Book|Paradise|Toni Morrison|9780307275394|Fiction|100100|14|Out|14
+Book|A Mercy|Toni Morrison|9780307276766|Historical Fiction|100101|12.5|Out|14
+Book|Home|Toni Morrison|9780307740922|Fiction|100102|11.5|Out|14
+Book|God Help the Child|Toni Morrison|9780307740939|Fiction|100103|13|In|14
+Book|The Handmaid's Tale|Margaret Atwood|9780385490818|Sci-Fi|100104|15|Out|14
+Book|Oryx and Crake|Margaret Atwood|9780385721677|Sci-Fi|100105|14|Out|14
+Book|The Year of the Flood|Margaret Atwood|9780307455476|Sci-Fi|100106|14.5|Out|14
+Book|MaddAddam|Margaret Atwood|9780307740953|Sci-Fi|100107|16|In|14
+Book|The Testaments|Margaret Atwood|9780385543781|Fiction|100108|18|Out|14
+Book|Cat's Eye|Margaret Atwood|9780385491020|Fiction|100109|13|Out|14
+Book|Alias Grace|Margaret Atwood|9780385490443|Historical Fiction|100110|14|Out|14
+Book|The Blind Assassin|Margaret Atwood|9780385721059|Historical Fiction|100111|16|In|14
+Book|The Penelopiad|Margaret Atwood|9781841957982|Mythology|100112|10|Out|14
+Book|The Robber Bride|Margaret Atwood|9780385491044|Fiction|100113|13.5|Out|14
+Book|Moral Disorder|Margaret Atwood|9780307276766|Fiction|100114|12.5|Out|14
+Book|Stone Mattress|Margaret Atwood|9780771008209|Fiction|100115|11.5|In|14
+Book|The Edible Woman|Margaret Atwood|9780385491068|Fiction|100116|12|Out|14
+Book|Surfacing|Margaret Atwood|9780385491051|Fiction|100117|11|Out|14
+Book|Life Before Man|Margaret Atwood|9780385491075|Fiction|100118|10.5|Out|14
+Book|Bodily Harm|Margaret Atwood|9780385491082|Thriller|100119|12|In|14
+Book|Wilderness Tips|Margaret Atwood|9780385422895|Fiction|100120|11|Out|14
+Book|Good Bones|Margaret Atwood|9780385472142|Poetry|100121|9.5|Out|14
+Book|The Tent|Margaret Atwood|9780385721677|Fiction|100122|8.5|Out|14
+Book|In Other Worlds: SF and the Human Imagination|Margaret Atwood|9780307455476|Non-Fiction|100123|14|In|14
+Book|Payback: Debt and the Shadow Side of Wealth|Margaret Atwood|9780887848107|Non-Fiction|100124|16|Out|14
+Book|Negotiating with the Dead: A Writer on Writing|Margaret Atwood|9780385721677|Non-Fiction|100125|15|Out|14
+Book|A Brief History of Time|Stephen Hawking|9780553380163|Science|100126|17|Out|14
+Book|Cosmos|Carl Sagan|9780345539434|Science|100127|18.5|In|14
+Book|The Demon-Haunted World|Carl Sagan|9780345409461|Science|100128|16.5|Out|14
+Book|Guns, Germs, and Steel|Jared Diamond|9780393317558|History|100129|18|Out|14
+Book|The Selfish Gene|Richard Dawkins|9780199291151|Science|100130|15|Out|14
+Book|The Blind Watchmaker|Richard Dawkins|9780393315707|Science|100131|16|In|14
+Book|The God Delusion|Richard Dawkins|9780618918249|Non-Fiction|100132|17|Out|14
+Book|Thinking, Fast and Slow|Daniel Kahneman|9780374533557|Psychology|100133|18|Out|14
+Book|Freakonomics|Steven D. Levitt|9780060731328|Economics|100134|15|Out|14
+Book|Outliers|Malcolm Gladwell|9780316017930|Psychology|100135|16|In|14
+Book|The Tipping Point|Malcolm Gladwell|9780316346627|Sociology|100136|14|Out|14
+Book|Blink|Malcolm Gladwell|9780316010665|Psychology|100137|13|Out|14
+Book|David and Goliath|Malcolm Gladwell|9780316204378|Psychology|100138|17|Out|14
+Book|What the Dog Saw|Malcolm Gladwell|9780316075845|Sociology|100139|15|In|14
+Book|Talking to Strangers|Malcolm Gladwell|9780316478526|Psychology|100140|18|Out|14
+Book|The Power of Habit|Charles Duhigg|9780812981605|Self-Help|100141|16|Out|14
+Book|Quiet|Susan Cain|9780307352156|Psychology|100142|17|Out|14
+Book|The Immortal Life of Henrietta Lacks|Rebecca Skloot|9781400052189|Biography|100143|16|In|14
+Book|The Emperor of All Maladies|Siddhartha Mukherjee|9781439170915|Science|100144|18|Out|14
+Book|The Gene: An Intimate History|Siddhartha Mukherjee|9781476733500|Science|100145|19|Out|14
+Book|The Man Who Mistook His Wife for a Hat|Oliver Sacks|9780684853949|Neuroscience|100146|15|Out|14
+Book|Awakenings|Oliver Sacks|9780375704055|Neuroscience|100147|14|In|14
+Book|Musicophilia|Oliver Sacks|9781400033539|Neuroscience|100148|16|Out|14
+Book|An Anthropologist on Mars|Oliver Sacks|9780679756972|Neuroscience|100149|14|Out|14
+Book|The Island of the Colorblind|Oliver Sacks|9780375700736|Neuroscience|100150|13|Out|14
+Book|Seeing Voices|Oliver Sacks|9780375704079|Neuroscience|100151|12|In|14
+Book|Uncle Tungsten|Oliver Sacks|9780375704048|Biography|100152|15|Out|14
+Book|Gratitude|Oliver Sacks|9780385352604|Biography|100153|10|Out|14
+Book|The River of Consciousness|Oliver Sacks|9780385352567|Science|100154|17|Out|14
+Book|Everything in Its Place|Oliver Sacks|9780385352567|Science|100155|16|In|14
+Book|The Tell-Tale Brain|V.S. Ramachandran|9780393340624|Neuroscience|100156|18|Out|14
+Book|Phantoms in the Brain|V.S. Ramachandran|9780688172176|Neuroscience|100157|17|Out|14
+Book|A Universe from Nothing|Lawrence M. Krauss|9781451624465|Physics|100158|16|Out|14
+Book|The Elegant Universe|Brian Greene|9780393338102|Physics|100159|19|In|14
+Book|The Fabric of the Cosmos|Brian Greene|9780375727207|Physics|100160|20|Out|14
+Book|The Hidden Reality|Brian Greene|9780307278128|Physics|100161|21|Out|14
+Book|Until the End of Time|Brian Greene|9780525428812|Physics|100162|22|Out|14
+Book|I Contain Multitudes|Ed Yong|9780062368591|Biology|100163|17|In|14
+Book|An Immense World|Ed Yong|9780593133231|Biology|100164|18|Out|14
+Book|Entangled Life|Merlin Sheldrake|9780525510314|Biology|100165|19|Out|14
+Book|The Sixth Extinction|Elizabeth Kolbert|9780805092998|Science|100166|16|Out|14
+Book|Under a White Sky|Elizabeth Kolbert|9780593136270|Science|100167|17|In|14
+DVD|The Avengers|Action|Marvel|05/04/2012|143|200001|19.99|Out|7
+DVD|Inception|SciFi|Warner Bros.|07/16/2010|148|200002|14.99|Out|7
+DVD|The Dark Knight|Action|Warner Bros.|07/18/2008|152|200003|14.99|Out|7
+DVD|Pulp Fiction|Crime|Miramax|10/14/1994|154|200004|12.5|Out|7
+DVD|Forrest Gump|Drama|Paramount|07/06/1994|142|200005|13|Out|7
+DVD|The Matrix|SciFi|Warner Bros.|03/31/1999|136|200006|11.99|Out|7
+DVD|Goodfellas|Crime|Warner Bros.|09/19/1990|146|200007|12.99|In|7
+DVD|The Shawshank Redemption|Drama|Castle Rock|09/23/1994|142|200008|14|Out|7
+DVD|The Godfather|Crime|Paramount|03/24/1972|175|200009|15.5|Out|7
+DVD|Fight Club|Drama|20th Century Fox|10/15/1999|139|200010|10.99|Out|7
+DVD|The Lord of the Rings: The Fellowship of the Ring|Fantasy|New Line Cinema|12/19/2001|178|200011|16.5|In|7
+DVD|Star Wars: Episode IV - A New Hope|SciFi|20th Century Fox|05/25/1977|121|200012|14.5|Out|7
+DVD|Jurassic Park|SciFi|Universal|06/11/1993|127|200013|13.5|Out|7
+DVD|The Silence of the Lambs|Thriller|Orion|02/14/1991|118|200014|11.5|Out|7
+DVD|Gladiator|Action|DreamWorks|05/05/2000|155|200015|12|In|7
+DVD|Titanic|Romance|20th Century Fox|12/19/1997|195|200016|14|Out|7
+DVD|Avatar|SciFi|20th Century Fox|12/18/2009|162|200017|15|Out|7
+DVD|Back to the Future|SciFi|Universal|07/03/1985|116|200018|10|Out|7
+DVD|The Lion King|Animation|Disney|06/24/1994|88|200019|18|In|7
+DVD|Finding Nemo|Animation|Pixar|05/30/2003|100|200020|17.5|Out|7
+DVD|Spirited Away|Animation|Studio Ghibli|07/20/2001|125|200021|16|Out|7
+DVD|Saving Private Ryan|War|DreamWorks|07/24/1998|169|200022|13|Out|7
+DVD|Parasite|Thriller|CJ Entertainment|10/11/2019|132|200023|19.99|In|7
+DVD|Interstellar|SciFi|Paramount|11/07/2014|169|200024|14.99|Out|7
+DVD|The Departed|Crime|Warner Bros.|10/06/2006|151|200025|12.5|Out|7
+DVD|Whiplash|Drama|Sony Pictures|10/10/2014|107|200026|11.99|Out|7
+DVD|The Prestige|Mystery|Warner Bros.|10/20/2006|130|200027|13.5|In|7
+DVD|Alien|Horror|20th Century Fox|05/25/1979|117|200028|10.5|Out|7
+DVD|Jaws|Thriller|Universal|06/20/1975|124|200029|11|Out|7
+DVD|Toy Story|Animation|Pixar|11/22/1995|81|200030|17|Out|7
+DVD|Up|Animation|Pixar|05/29/2009|96|200031|17.5|In|7
+DVD|WALL-E|Animation|Pixar|06/27/2008|98|200032|17.5|Out|7
+DVD|Coco|Animation|Pixar|11/22/2017|105|200033|18|Out|7
+DVD|The Incredibles|Animation|Pixar|11/05/2004|115|200034|17|Out|7
+DVD|Ratatouille|Animation|Pixar|06/29/2007|111|200035|17|In|7
+DVD|Monsters, Inc.|Animation|Pixar|11/02/2001|92|200036|16.5|Out|7
+DVD|A Bug's Life|Animation|Pixar|11/25/1998|95|200037|16|Out|7
+DVD|Cars|Animation|Pixar|06/09/2006|117|200038|16.5|Out|7
+DVD|Brave|Animation|Pixar|06/22/2012|93|200039|17|In|7
+DVD|Inside Out|Animation|Pixar|06/19/2015|95|200040|18|Out|7
+DVD|Soul|Animation|Pixar|12/25/2020|100|200041|19.99|Out|7
+DVD|Luca|Animation|Pixar|06/18/2021|95|200042|19.99|Out|7
+DVD|Turning Red|Animation|Pixar|03/11/2022|100|200043|19.99|In|7
+DVD|Frozen|Animation|Disney|11/27/2013|102|200044|18.5|Out|7
+DVD|Moana|Animation|Disney|11/23/2016|107|200045|18.5|Out|7
+DVD|Zootopia|Animation|Disney|03/04/2016|108|200046|18|Out|7
+DVD|Tangled|Animation|Disney|11/24/2010|100|200047|17.5|In|7
+DVD|Beauty and the Beast|Animation|Disney|11/22/1991|84|200048|16|Out|7
+DVD|Aladdin|Animation|Disney|11/25/1992|90|200049|16.5|Out|7
+DVD|Mulan|Animation|Disney|06/19/1998|88|200050|16|Out|7
+DVD|The Little Mermaid|Animation|Disney|11/17/1989|83|200051|15.5|In|7
+DVD|Snow White and the Seven Dwarfs|Animation|Disney|12/21/1937|83|200052|14|Out|7
+DVD|Pinocchio|Animation|Disney|02/23/1940|88|200053|14.5|Out|7
+DVD|Dumbo|Animation|Disney|10/23/1941|64|200054|13.5|Out|7
+DVD|Bambi|Animation|Disney|08/21/1942|70|200055|14|In|7
+DVD|Cinderella|Animation|Disney|03/04/1950|74|200056|15|Out|7
+DVD|Peter Pan|Animation|Disney|02/05/1953|77|200057|15.5|Out|7
+DVD|Lady and the Tramp|Animation|Disney|06/22/1955|76|200058|15|Out|7
+DVD|Sleeping Beauty|Animation|Disney|01/29/1959|75|200059|16|In|7
+DVD|One Hundred and One Dalmatians|Animation|Disney|01/25/1961|79|200060|16.5|Out|7
+DVD|The Jungle Book|Animation|Disney|10/18/1967|78|200061|16|Out|7
+DVD|The Aristocats|Animation|Disney|12/24/1970|78|200062|15.5|Out|7
+DVD|Robin Hood|Animation|Disney|11/08/1973|83|200063|15|In|7
+DVD|The Rescuers|Animation|Disney|06/22/1977|78|200064|14.5|Out|7
+DVD|The Fox and the Hound|Animation|Disney|07/10/1981|83|200065|14|Out|7
+DVD|The Great Mouse Detective|Animation|Disney|07/02/1986|74|200066|13.5|Out|7
+DVD|Oliver & Company|Animation|Disney|11/18/1988|74|200067|13|In|7
+DVD|The Rescuers Down Under|Animation|Disney|11/16/1990|77|200068|14|Out|7
+DVD|Pocahontas|Animation|Disney|06/23/1995|81|200069|15|Out|7
+DVD|The Hunchback of Notre Dame|Animation|Disney|06/21/1996|91|200070|16|Out|7
+DVD|Hercules|Animation|Disney|06/27/1997|93|200071|16.5|In|7
+DVD|Tarzan|Animation|Disney|06/18/1999|88|200072|17|Out|7
+DVD|Fantasia 2000|Animation|Disney|12/17/1999|75|200073|18|Out|7
+DVD|Dinosaur|Animation|Disney|05/19/2000|82|200074|17.5|Out|7
+DVD|The Emperor's New Groove|Animation|Disney|12/15/2000|78|200075|17|In|7
+DVD|Atlantis: The Lost Empire|Animation|Disney|06/15/2001|95|200076|16.5|Out|7
+DVD|Lilo & Stitch|Animation|Disney|06/21/2002|85|200077|16|Out|7
+DVD|Treasure Planet|Animation|Disney|11/27/2002|95|200078|16|Out|7
+DVD|Brother Bear|Animation|Disney|11/01/2003|85|200079|15.5|In|7
+DVD|Home on the Range|Animation|Disney|04/02/2004|76|200080|15|Out|7
+DVD|Chicken Little|Animation|Disney|11/04/2005|81|200081|15|Out|7
+DVD|Meet the Robinsons|Animation|Disney|03/30/2007|95|200082|15.5|Out|7
+DVD|Bolt|Animation|Disney|11/21/2008|96|200083|16|In|7
+DVD|The Princess and the Frog|Animation|Disney|12/11/2009|97|200084|17|Out|7
+DVD|Winnie the Pooh|Animation|Disney|07/15/2011|63|200085|15|Out|7
+DVD|Wreck-It Ralph|Animation|Disney|11/02/2012|101|200086|17.5|Out|7
+DVD|Big Hero 6|Animation|Disney|11/07/2014|102|200087|18|In|7
+DVD|Ralph Breaks the Internet|Animation|Disney|11/21/2018|112|200088|18.5|Out|7
+DVD|Frozen II|Animation|Disney|11/22/2019|103|200089|19|Out|7
+DVD|Raya and the Last Dragon|Animation|Disney|03/05/2021|107|200090|19.5|Out|7
+DVD|Encanto|Animation|Disney|11/24/2021|102|200091|19.99|In|7
+AudioCD|21|Adele|Pop|01/24/2011|11|300001|12.99|Out|7
+AudioCD|Thriller|Michael Jackson|Pop|11/30/1982|9|300002|10|Out|7
+AudioCD|Abbey Road|The Beatles|Rock|09/26/1969|17|300003|15.5|Out|7
+AudioCD|The Dark Side of the Moon|Pink Floyd|Rock|03/01/1973|10|300004|14.5|Out|7
+AudioCD|Rumours|Fleetwood Mac|Rock|02/04/1977|11|300005|13|In|7
+AudioCD|Nevermind|Nirvana|Grunge|09/24/1991|12|300006|12|Out|7
+AudioCD|Back to Black|Amy Winehouse|Soul|10/27/2006|11|300007|11.5|Out|7
+AudioCD|Lemonade|Beyonce|Pop|04/23/2016|12|300008|18|Out|7
+AudioCD|To Pimp a Butterfly|Kendrick Lamar|Hip-Hop|03/15/2015|16|300009|17.5|In|7
+AudioCD|My Beautiful Dark Twisted Fantasy|Kanye West|Hip-Hop|11/22/2010|13|300010|16|Out|7
+AudioCD|Sgt. Pepper's Lonely Hearts Club Band|The Beatles|Rock|06/01/1967|13|300011|15|Out|7
+AudioCD|What's Going On|Marvin Gaye|Soul|05/21/1971|9|300012|14|Out|7
+AudioCD|Blue|Joni Mitchell|Folk|06/22/1971|10|300013|12.5|In|7
+AudioCD|Born to Run|Bruce Springsteen|Rock|08/25/1975|8|300014|13.5|Out|7
+AudioCD|Revolver|The Beatles|Rock|08/05/1966|14|300015|14.5|Out|7
+AudioCD|Pet Sounds|The Beach Boys|Pop|05/16/1966|13|300016|13|Out|7
+AudioCD|London Calling|The Clash|Punk|12/14/1979|19|300017|12|In|7
+AudioCD|Exile on Main St.|The Rolling Stones|Rock|05/12/1972|18|300018|14|Out|7
+AudioCD|Blonde|Frank Ocean|R&B|08/20/2016|17|300019|19|Out|7
+AudioCD|Kind of Blue|Miles Davis|Jazz|08/17/1959|5|300020|16.5|Out|7
+AudioCD|The Joshua Tree|U2|Rock|03/09/1987|11|300021|13|In|7
+AudioCD|Led Zeppelin IV|Led Zeppelin|Rock|11/08/1971|8|300022|14|Out|7
+AudioCD|Purple Rain|Prince|Pop|06/25/1984|9|300023|12.5|Out|7
+AudioCD|OK Computer|Radiohead|Alternative|05/21/1997|12|300024|15|Out|7
+AudioCD|The Miseducation of Lauryn Hill|Lauryn Hill|Hip-Hop|08/25/1998|16|300025|14.5|In|7
+AudioCD|Tapestry|Carole King|Pop|02/10/1971|12|300026|11.5|Out|7
+AudioCD|I Never Loved a Man the Way I Love You|Aretha Franklin|Soul|03/10/1967|11|300027|13.5|Out|7
+AudioCD|Hotel California|Eagles|Rock|12/08/1976|9|300028|12|Out|7
+AudioCD|Channel Orange|Frank Ocean|R&B|07/10/2012|17|300029|18|In|7
+AudioCD|AM|Arctic Monkeys|Rock|09/09/2013|12|300030|15.5|Out|7
+AudioCD|1989|Taylor Swift|Pop|10/27/2014|13|300031|16|Out|7
+AudioCD|The Marshall Mathers LP|Eminem|Hip-Hop|05/23/2000|18|300032|14|Out|7
+AudioCD|Good Kid, M.A.A.D City|Kendrick Lamar|Hip-Hop|10/22/2012|12|300033|17|In|7
+AudioCD|Random Access Memories|Daft Punk|Electronic|05/17/2013|13|300034|18.5|Out|7
+AudioCD|Ctrl|SZA|R&B|06/09/2017|14|300035|16.5|Out|7
+AudioCD|A Night at the Opera|Queen|Rock|11/21/1975|12|300036|13|Out|7
+AudioCD|The Chronic|Dr. Dre|Hip-Hop|12/15/1992|16|300037|14|In|7
+AudioCD|Is This It|The Strokes|Rock|07/30/2001|11|300038|12.5|Out|7
+AudioCD|Appetite for Destruction|Guns N' Roses|Rock|07/21/1987|12|300039|13.5|Out|7
+AudioCD|The Queen Is Dead|The Smiths|Alternative|06/16/1986|10|300040|12|Out|7
+AudioCD|Dummy|Portishead|Trip-Hop|08/22/1994|11|300041|14|In|7
+AudioCD|Mezzanine|Massive Attack|Trip-Hop|04/20/1998|11|300042|15|Out|7
+AudioCD|Homogenic|Bjork|Art Pop|09/20/1997|10|300043|16|Out|7
+AudioCD|Vespertine|Bjork|Art Pop|08/27/2001|12|300044|16.5|Out|7
+AudioCD|Kid A|Radiohead|Electronic|10/02/2000|10|300045|15.5|In|7
+AudioCD|In Rainbows|Radiohead|Alternative|10/10/2007|10|300046|14.5|Out|7
+AudioCD|Grace|Jeff Buckley|Alternative|08/23/1994|10|300047|13|Out|7
+AudioCD|The Stone Roses|The Stone Roses|Rock|05/02/1989|12|300048|12.5|Out|7
+AudioCD|Loveless|My Bloody Valentine|Shoegaze|11/04/1991|11|300049|17|In|7
+AudioCD|Souvlaki|Slowdive|Shoegaze|05/17/1993|10|300050|16|Out|7
+AudioCD|Disintegration|The Cure|Gothic Rock|05/02/1989|12|300051|14|Out|7
+AudioCD|Closer|Joy Division|Post-Punk|07/18/1980|9|300052|13|Out|7
+AudioCD|Unknown Pleasures|Joy Division|Post-Punk|06/15/1979|10|300053|13.5|In|7
+AudioCD|Remain in Light|Talking Heads|New Wave|10/08/1980|8|300054|14|Out|7
+AudioCD|Speaking in Tongues|Talking Heads|New Wave|06/01/1983|9|300055|13|Out|7
+AudioCD|Power, Corruption & Lies|New Order|Synth-Pop|05/02/1983|8|300056|12.5|Out|7
+AudioCD|Technique|New Order|Synth-Pop|01/30/1989|9|300057|13|In|7
+AudioCD|Violator|Depeche Mode|Synth-Pop|03/19/1990|9|300058|14|Out|7
+AudioCD|Music for the Masses|Depeche Mode|Synth-Pop|09/28/1987|10|300059|13.5|Out|7
+AudioCD|Songs of Faith and Devotion|Depeche Mode|Alternative|03/22/1993|10|300060|14.5|Out|7
+AudioCD|The Downward Spiral|Nine Inch Nails|Industrial|03/08/1994|14|300061|15|In|7
+AudioCD|Pretty Hate Machine|Nine Inch Nails|Industrial|10/20/1989|10|300062|12|Out|7
+AudioCD|The Fragile|Nine Inch Nails|Industrial|09/21/1999|23|300063|18|Out|7
+AudioCD|Lateralus|Tool|Progressive Metal|05/15/2001|9|300064|16|Out|7
+AudioCD|Aenima|Tool|Progressive Metal|10/01/1996|15|300065|15.5|In|7
+AudioCD|10,000 Days|Tool|Progressive Metal|05/02/2006|11|300066|17|Out|7
+AudioCD|Fear Inoculum|Tool|Progressive Metal|08/30/2019|7|300067|19|Out|7
+AudioCD|Master of Puppets|Metallica|Thrash Metal|03/03/1986|8|300068|14|Out|7
+AudioCD|Ride the Lightning|Metallica|Thrash Metal|07/27/1984|8|300069|13|In|7
+AudioCD|...And Justice for All|Metallica|Thrash Metal|09/07/1988|9|300070|14.5|Out|7
+AudioCD|Metallica (The Black Album)|Metallica|Heavy Metal|08/12/1991|12|300071|15|Out|7
+AudioCD|Reign in Blood|Slayer|Thrash Metal|10/07/1986|10|300072|13|Out|7
+AudioCD|South of Heaven|Slayer|Thrash Metal|07/05/1988|10|300073|13.5|In|7
+AudioCD|Seasons in the Abyss|Slayer|Thrash Metal|10/09/1990|10|300074|14|Out|7
+AudioCD|Rust in Peace|Megadeth|Thrash Metal|09/24/1990|9|300075|13.5|Out|7
+AudioCD|Countdown to Extinction|Megadeth|Heavy Metal|07/14/1992|11|300076|14|Out|7
+AudioCD|Peace Sells... but Who's Buying?|Megadeth|Thrash Metal|09/19/1986|8|300077|12.5|In|7
+AudioCD|Among the Living|Anthrax|Thrash Metal|03/22/1987|9|300078|12|Out|7
+AudioCD|Spreading the Disease|Anthrax|Thrash Metal|10/30/1985|9|300079|11.5|Out|7
+AudioCD|Persistence of Time|Anthrax|Thrash Metal|08/21/1990|11|300080|13|Out|7
+AudioCD|Sound of White Noise|Anthrax|Alternative Metal|05/25/1993|11|300081|13.5|In|7
+AudioCD|Vulgar Display of Power|Pantera|Groove Metal|02/25/1992|11|300082|14|Out|7
+AudioCD|Cowboys from Hell|Pantera|Groove Metal|07/24/1990|12|300083|13|Out|7
+AudioCD|Far Beyond Driven|Pantera|Groove Metal|03/22/1994|12|300084|14.5|Out|7
+AudioCD|The Great Southern Trendkill|Pantera|Groove Metal|05/07/1996|11|300085|15|In|7
+AudioCD|Paranoid|Black Sabbath|Heavy Metal|09/18/1970|8|300086|12|Out|7
+AudioCD|Master of Reality|Black Sabbath|Heavy Metal|07/21/1971|8|300087|12.5|Out|7
+AudioCD|Black Sabbath|Black Sabbath|Heavy Metal|02/13/1970|7|300088|11.5|Out|7
+AudioCD|Sabbath Bloody Sabbath|Black Sabbath|Heavy Metal|12/01/1973|8|300089|13|In|7
+AudioCD|Heaven and Hell|Black Sabbath|Heavy Metal|04/25/1980|8|300090|13.5|Out|7
+AudioCD|Mob Rules|Black Sabbath|Heavy Metal|11/04/1981|9|300091|14|Out|7
+AudioCD|The Number of the Beast|Iron Maiden|Heavy Metal|03/22/1982|8|300092|12.5|Out|7
+AudioCD|Powerslave|Iron Maiden|Heavy Metal|09/03/1984|8|300093|13|In|7
+AudioCD|Seventh Son of a Seventh Son|Iron Maiden|Heavy Metal|04/11/1988|8|300094|14|Out|7
+AudioCD|Aces High|Iron Maiden|Heavy Metal|10/22/1984|3|300095|8|Out|7
+AudioCD|British Steel|Judas Priest|Heavy Metal|04/14/1980|9|300096|12|Out|7
+AudioCD|Screaming for Vengeance|Judas Priest|Heavy Metal|07/17/1982|9|300097|12.5|In|7
+AudioCD|Painkiller|Judas Priest|Heavy Metal|09/03/1990|10|300098|13.5|Out|7
+AudioCD|Defenders of the Faith|Judas Priest|Heavy Metal|01/04/1984|10|300099|13|Out|7
+AudioCD|Sad Wings of Destiny|Judas Priest|Heavy Metal|03/23/1976|9|300100|11.5|Out|7

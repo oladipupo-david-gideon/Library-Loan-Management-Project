@@ -1,43 +1,30 @@
-#ifndef LOANSH
-#define LOANSH
+#ifndef LOANS_H
+#define LOANS_H
 
 #include "Loan.h"
+#include "Patrons.h"
+#include "LibraryItems.h"
 #include <vector>
-#include <iostream>
 #include <string>
 
-class Loans{
-    private:
-        vector<Loan> loanList;
+class Loans {
+private:
+    std::vector<Loan> loanList;
+    bool isDatePast(const Date& date) const;
+    int GenerateUniqueLoanID();
 
-    public:
-        int GenerateUniqueLoanID();
-
-        vector<Loan>& GetLoanList();
-
-        bool IsLoanOverdue(int loanID);
-        bool IsPatronOverdue(int patronID);
-        bool HasOtherLoansOverdue(int loanID);
-        void updatePatronFineBalByClock(int loanID, vector<Patron>& patronL);
-
-        void CheckOutItem(int patronID, int itemID, vector<Patron>& patronL, vector<LibraryItem*>& itemL);
-        void CheckInItem(int loanID, vector<Patron>& patronL, vector<LibraryItem*>& itemL);
-        void ReCheckItem(int loanID, vector<Patron>& patronL, vector<LibraryItem*>& itemL);
-        void EditLoan(int loanID);
-        void ReportLostItem(int loanID, vector<Patron>& patronL, vector<LibraryItem*>& itemL);
-        
-        void PrintAllLoans();
-        void ListOverdueLoans();
-        void AllLoansForPatron(int pID);
-        void OverdueLoansForPatron(int pID);
-        
-        void UpdateLoanStatus(int loanID, vector<Patron>& patronL);
-        void UpdateAllLoans(vector<Patron>& patronL);
-
-        // File Operations
-        void EnsureFileExists(const string& filename);
-        void saveToFile() const;
-        void loadFromFile();
+public:
+    void CheckOutItem(int patronID, int itemID, Patrons& patrons, LibraryItems& items);
+    void CheckInItem(int loanID, Patrons& patrons, LibraryItems& items);
+    
+    void PrintAllLoans();
+    void ListOverdueLoans();
+    void AllLoansForPatron(int patronID);
+    
+    void UpdateAllLoanStatuses(Patrons& patrons);
+    
+    void saveToFile();
+    void loadFromFile();
 };
 
 #endif

@@ -1,39 +1,35 @@
-#ifndef PATRONH
-#define PATRONH
+#ifndef PATRON_H
+#define PATRON_H
 
 #include <string>
 #include <iostream>
-#include <cctype>
-using namespace std;
+
+class Patron {
+private:
+    std::string patronName;
+    int patronID;
+    double fineBal;
+    int itemsOut;
+
+public:
+    Patron();
+
+    void SetPatronName(const std::string& name);
+    void SetPatronID(int id);
+    void SetFineBalance(double bal);
+    void SetItemsOut(int numItemsOut);
     
-class Patron{
-    private:
-        string patronName;
-        int patronID;
-        double fineBal;
-        int booksOut;
-        
-    public:
-        Patron();
-        void SetPatronName(string name);
-        void SetPatronID(int id);
-        void SetFineBalance(double bal);
-        void SetBooksOut(int numBooksOut);
-        
-        string GetPatronName() const;
-        int GetPatronID() const;
-        double GetFineBalance() const;
-        int GetBooksOut() const;
+    std::string GetPatronName() const;
+    int GetPatronID() const;
+    double GetFineBalance() const;
+    int GetItemsOut() const;
 
-        void DisplayHeader() const;
-        void Display() const;
+    void AdjustFineBalance(double amount);
+    void IncrementItemsOut();
+    void DecrementItemsOut();
 
-        void IncreaseFineBalance(double amount);
-        void IncreaseBooksCheckedOut();
-        void DecreaseBooksCheckedOut();
-
-        string serialize() const;
-        bool deserialize(istream& inFile);
+    std::string serialize() const;
+    bool deserialize(std::istream& inFile);
 };
     
 #endif

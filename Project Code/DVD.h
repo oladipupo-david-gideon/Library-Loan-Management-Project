@@ -1,46 +1,44 @@
-#ifndef DVDH
-#define DVDH
+#ifndef DVD_H
+#define DVD_H
 
 #include "LibraryItem.h"
-#include <iostream>
 #include <string>
-using namespace std;
+#include <iostream>
 
 class DVD : public LibraryItem {
 private:
-    string title;
-    string category;
+    std::string title;
+    std::string category;
     int runTime;
-    string studio;
-    string releaseDate;
+    std::string studio;
+    std::string releaseDate;
 
-    public:
+public:
     DVD();
 
     // Setters
-    void SetTitle(const string& t);
-    void SetCategory(const string& c);
+    void SetTitle(const std::string& t);
+    void SetCategory(const std::string& c);
     void SetRunTime(int rt);
-    void SetStudio(const string& s);
-    void SetReleaseDate(const string& rd);
+    void SetStudio(const std::string& s);
+    void SetReleaseDate(const std::string& rd);
 
     // Getters
-    string GetTitle() const;
-    string GetCategory() const;
+    std::string GetTitle() const;
+    std::string GetCategory() const;
     int GetRunTime() const;
-    string GetStudio() const;
-    string GetReleaseDate() const;
+    std::string GetStudio() const;
+    std::string GetReleaseDate() const;
 
     // Polymorphic overrides
-    string GetItemType() const override;
+    std::string GetItemType() const override;
     void InputDetails() override;
     void EditDetails() override;
-    void PrintHeader(ostream& os) const override;
-    void PrintDetails(ostream& os) const override;
-    bool Matches(int criteria, const string& value) const override;
+    void PrintHeader(std::ostream& os) const override;
+    void PrintDetails(std::ostream& os) const override;
 
-    string serialize() const override;
-    bool deserialize(istream& inFile) override;
+    std::string serialize() const override;
+    bool deserialize(std::istream& inFile) override;
 };
 
 #endif

@@ -1,44 +1,41 @@
-#ifndef LOANH
-#define LOANH
+#ifndef LOAN_H
+#define LOAN_H
 
-#include <fstream>
 #include <string>
 #include <iostream>
-using namespace std;
 
-class Loan{
-    private:
-        int itemID;
-        int patronID;
-        int loanID;
-        string loanStatus;
-        struct {
-            int month, day, year;
-        } dueDate;
-        int numOfRechecks;
-        int previousOverdueDays;
+struct Date {
+    int month = 0, day = 0, year = 0;
+};
 
-    public:
-        Loan();
-        void SetLoanID(int loanID);
-        void SetItemID(int bookID);
-        void SetPatronID(int patronID);
-        void SetLoanStatus(string loanStat);
-        void SetDueDate();
-        void SetNumRechecks(int numRe);
-        void SetPreviousOverdueDays(int days);
+class Loan {
+private:
+    int loanID;
+    int itemID;
+    int patronID;
+    std::string loanStatus;
+    Date dueDate;
+    int numRechecks;
 
-        int GetLoanID() const;
-        int GetItemID() const;
-        int GetPatronID() const;
-        int GetNumRechecks() const;
-        string GetDueDate() const;
-        string GetLoanStatus() const;
-        int GetPreviousOverdueDays() const;
+public:
+    Loan();
+    void SetLoanID(int id);
+    void SetItemID(int id);
+    void SetPatronID(int id);
+    void SetLoanStatus(const std::string& status);
+    void SetDueDate(int loanDays); // Accepts the specific item's loan period
+    void SetNumRechecks(int num);
 
+    int GetLoanID() const;
+    int GetItemID() const;
+    int GetPatronID() const;
+    int GetNumRechecks() const;
+    Date GetDueDate() const;
+    std::string GetDueDateAsString() const;
+    std::string GetLoanStatus() const;
 
-        string serialize() const;
-        bool deserialize(istream& inFile);
+    std::string serialize() const;
+    bool deserialize(std::istream& inFile);
 };
 
 #endif

@@ -1,45 +1,44 @@
-#ifndef AUDIOCDH
-#define AUDIOCDH
+#ifndef AUDIO_CD_H
+#define AUDIO_CD_H
 
 #include "LibraryItem.h"
-#include <iostream>
 #include <string>
-using namespace std;
+#include <iostream>
 
 class AudioCD : public LibraryItem {
 private:
-    string artist;
-    string title;
+    std::string artist;
+    std::string title;
     int numOfTracks;
-    string releaseDate;
-    string genre;
+    std::string releaseDate;
+    std::string genre;
 
-    public:
+public:
     AudioCD();
 
     // Setters
-    void SetArtist(const string& artistName);
-    void SetTitle(const string& cdTitle);
+    void SetArtist(const std::string& artistName);
+    void SetTitle(const std::string& cdTitle);
     void SetNumOfTracks(int numTracks);
-    void SetReleaseDate(const string& date);
-    void SetGenre(const string& cdGenre);
+    void SetReleaseDate(const std::string& date);
+    void SetGenre(const std::string& cdGenre);
 
     // Getters
-    string GetArtist() const;
-    string GetTitle() const;
+    std::string GetArtist() const;
+    std::string GetTitle() const;
     int GetNumOfTracks() const;
-    string GetReleaseDate() const;
-    string GetGenre() const;
+    std::string GetReleaseDate() const;
+    std::string GetGenre() const;
 
     // Polymorphic overrides
-    string GetItemType() const override;
+    std::string GetItemType() const override;
     void InputDetails() override;
     void EditDetails() override;
-    void PrintHeader(ostream& os) const override;
-    void PrintDetails(ostream& os) const override;
-    bool Matches(int criteria, const string& value) const override;
-    string serialize() const override;
-    bool deserialize(istream& inFile) override;
+    void PrintHeader(std::ostream& os) const override;
+    void PrintDetails(std::ostream& os) const override;
+
+    std::string serialize() const override;
+    bool deserialize(std::istream& inFile) override;
 };
 
 #endif

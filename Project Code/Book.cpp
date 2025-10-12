@@ -1,272 +1,168 @@
 #include "Book.h"
-
 #include <iostream>
 #include <sstream>
-#include <cmath>
-#include <ctime>
-#include <cstdio>
-#include <cctype>
-#include <cstring>
-#include <array>
-#include <algorithm>
-#include <chrono>
-#include <random>
-#include <string>
-#include <vector>
-#include <regex>
 #include <iomanip>
+#include <limits>
+#include <regex>
+#include <string>
 
-using namespace std;
-
-Book::Book(){
-    this-> authorName = "unknown";
-    this-> bookTitle = "unknown";
-    this-> isbn = 0000000000;
-    this-> libraryID = 000000;
-    this-> cost = 0.00;
-    this-> status = "none";
-    this-> category = "unknown";
-}
-
-
-void Book::SetAuthorName(const string& name) {
-    this->authorName = name;
-}
-
-void Book::SetBookTitle(const string& title) {
-    this->bookTitle = title;
-}
-void Book::SetISBN(long isbn_num){//should be a 10-digit number
-    string temp = to_string(isbn_num);
-    if(temp.length() < 10 ){
-        temp = string(10-temp.length(), '0') + temp;
-    } else if(temp.length() > 10) {
-        temp = temp.substr(0,10);
+// Helper function to truncate strings
+static std::string truncate(const std::string& str, size_t width) {
+    if (str.length() > width) {
+        return str.substr(0, width - 3) + "...";
     }
-    this-> isbn = stol(temp);
-}
-void Book::SetBookCategory(const string& cat) {
-    this->category = cat;
+    return str;
 }
 
-string Book::GetAuthorName() const{
-    return authorName;
-}
-string Book::GetBookTitle() const{
-    return bookTitle;
-}
-long Book::GetISBN() const{
-    return isbn;
-}
-string Book::GetBookCategory() const {
-    return category;
-}
-string Book::GetItemType() const {
-    return "Book";
+Book::Book() {
+    authorName = "unknown";
+    bookTitle = "unknown";
+    isbn = "0000000000000";
+    libraryID = 0;
+    cost = 0.00;
+    status = "In";
+    category = "unknown";
+    loanPeriod = 14; // Default for books
 }
 
+void Book::SetAuthorName(const std::string& name) { this->authorName = name; }
+void Book::SetBookTitle(const std::string& title) { this->bookTitle = title; }
+void Book::SetISBN(const std::string& isbn_num) { this->isbn = isbn_num; }
+void Book::SetBookCategory(const std::string& cat) { this->category = cat; }
 
+std::string Book::GetAuthorName() const { return authorName; }
+std::string Book::GetBookTitle() const { return bookTitle; }
+std::string Book::GetISBN() const { return isbn; }
+std::string Book::GetBookCategory() const { return category; }
+std::string Book::GetItemType() const { return "Book"; }
 
 void Book::InputDetails() {
-    cout << "Enter the Book's author: ";
-    getline(cin, authorName);
+    std::string input;
+    std::cout << "Enter the Book's author: ";
+    std::getline(std::cin, authorName);
 
-    cout << "Enter the Book's title: ";
-    getline(cin, bookTitle);
+    std::cout << "Enter the Book's title: ";
+    std::getline(std::cin, bookTitle);
     
-    cout << "Enter the Book's category (Biography, Fiction, SciFi, History, etc.): ";
-    getline(cin, category);
+    std::cout << "Enter the Book's category (e.g., Fiction, SciFi): ";
+    std::getline(std::cin, category);
 
-    // Error handling for book cost input
     while (true) {
-        cout << "Enter the Book's cost (up to 9 digits with at most 2 decimal places): ";
-        string input;
-        getline(cin, input);
-
-        // Trim leading/trailing whitespace
-        input.erase(0, input.find_first_not_of(" \t"));
-        input.erase(input.find_last_not_of(" \t") + 1);
-
-        if (!regex_match(input, regex(R"(\d{1,9}(\.\d{1,2})?)"))) {
-            cout << "Invalid input. Please enter a valid number.\n";
-            continue;
+        std::cout << "Enter the Book's cost: ";
+        std::getline(std::cin, input);
+        if (std::regex_match(input, std::regex(R"(\d{1,7}(\.\d{1,2})?)")) && std::stod(input) >= 0) {
+            SetCost(std::stod(input));
+            break;
         }
-
-        cost = stod(input);
-        if (cost < 0) {
-            cout << "Cost cannot be negative. Try again.\n";
-            continue;
-        }
-        break;
+        std::cout << "Invalid cost. Please enter a positive number (e.g., 19.99).\n";
     }
-
-    cout << "Book added successfully.\n";
 }
 
 void Book::EditDetails() {
     int choice;
-    bool doneEditing = false;
+    std::string input;
+    bool done = false;
 
-    while (!doneEditing) {
-        cout << "\nEditing Book with Library ID: " << libraryID << endl;
-        cout << "1. Author Name\n"
-             << "2. Book Title\n"
-             << "3. Cost\n"
-             << "4. Current Status\n"
-             << "5. Loan Period\n"
-             << "6. Done editing\n"
-             << "Enter choice: ";
-
-        if (!(cin >> choice) || choice < 1 || choice > 6) {
-            cout << "Invalid choice. Please enter a number between 1 and 6.\n";
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            continue;
-        }
-
-        cin.ignore(); // Clear newline character after choice
+    while (!done) {
+        std::cout << "\nEditing Book (ID: " << GetLibraryID() << ")\n";
+        std::cout << "1. Title\n2. Author\n3. Category\n4. Cost\n5. Status\n6. Done\nChoice: ";
+        std::cin >> choice;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         switch (choice) {
-            case 1: {
-                cout << "Enter new Author Name: ";
-                getline(cin, authorName);
-                cout << "Author updated.\n";
+            case 1:
+                std::cout << "Enter new title: ";
+                std::getline(std::cin, bookTitle);
                 break;
-            }
-            case 2: {
-                cout << "Enter new Book Title: ";
-                getline(cin, bookTitle);
-                cout << "Title updated.\n";
+            case 2:
+                std::cout << "Enter new author: ";
+                std::getline(std::cin, authorName);
                 break;
-            }
-            case 3: {
-                string input;
-                while (true) {
-                    cout << "Enter new Cost (up to 9 digits, max 2 decimals): ";
-                    getline(cin, input);
-                    if (!regex_match(input, regex(R"(\d{1,9}(\.\d{1,2})?)"))) {
-                        cout << "Invalid input. Try again.\n";
-                        continue;
-                    }
-                    cost = stod(input);
-                    if (cost < 0) {
-                        cout << "Cost cannot be negative.\n";
-                        continue;
-                    }
-                    cout << "Cost updated.\n";
-                    break;
-                }
+            case 3:
+                std::cout << "Enter new category: ";
+                std::getline(std::cin, category);
                 break;
-            }
-            case 4: {
-                cout << "Enter new Status (In, Out, Lost): ";
-                getline(cin, status);
-                cout << "Status updated.\n";
-                break;
-            }
-            case 5: {
-                string input;
-                while (true) {
-                    cout << "Enter new Loan Period (days): ";
-                    getline(cin, input);
-                    try {
-                        loanPeriod = stoi(input);
-                        if (loanPeriod < 0) throw invalid_argument("Negative");
+            case 4:
+                 while (true) {
+                    std::cout << "Enter new cost: ";
+                    std::getline(std::cin, input);
+                    if (std::regex_match(input, std::regex(R"(\d{1,7}(\.\d{1,2})?)")) && std::stod(input) >= 0) {
+                        SetCost(std::stod(input));
                         break;
-                    } catch (...) {
-                        cout << "Invalid loan period. Please enter a non-negative number.\n";
                     }
+                    std::cout << "Invalid cost. Please enter a positive number (e.g., 19.99).\n";
                 }
-                cout << "Loan Period updated.\n";
                 break;
-            }
+            case 5:
+                std::cout << "Enter new status (In, Out, Lost): ";
+                std::getline(std::cin, status);
+                break;
             case 6:
-                doneEditing = true;
-                cout << "Finished editing.\n";
+                done = true;
                 break;
+            default:
+                std::cout << "Invalid choice.\n";
         }
     }
 }
 
-void Book::PrintHeader(ostream& os) const {
-    os << "Book Details:" << endl << endl;
-    os << left << setw(15) << "Category"
-       << setw(20) << "ID"
-       << setw(30) << "Author"
-       << setw(30) << "Title"
-       << setw(14) << "ISBN"
-       << setw(15) << "Cost"
-       << setw(20) << "Loan Period(days)"
-       << setw(12) << "Status" << endl;
-    os << setfill('-') << setw(160) << "-" << endl;
-    os << setfill(' ');
-}
-void Book::PrintDetails(ostream& os) const {
-    os << left << setw(15) << GetBookCategory()
-       << setw(20) << GetLibraryID()
-       << setw(30) << GetAuthorName()
-       << setw(30) << GetBookTitle()
-       << setw(14) << GetISBN()
-       << "$" << setw(14) << fixed << setprecision(2) << GetCost()
-       << setw(20) << GetLoanPeriod()
-       << setw(12) << GetStatus() << endl;
+void Book::PrintHeader(std::ostream& os) const {
+    os << "\n--- BOOKS ---\n";
+    os << std::left 
+       << std::setw(10) << "ID"
+       << std::setw(32) << "Title"         // 30 text + 2 padding
+       << std::setw(27) << "Author"        // 25 text + 2 padding
+       << std::setw(17) << "ISBN"          // 15 text + 2 padding
+       << std::setw(17) << "Category"      // 15 text + 2 padding
+       << std::setw(12) << "Cost"          // 10 text + 2 padding
+       << std::setw(10) << "Status" << std::endl;
+    os << std::string(125, '-') << std::endl;
 }
 
-bool Book::Matches(int criteria, const string& value) const {
-    switch (criteria) {
-        case 1: { // Status
-            string bookStatus = status;
-            string searchStatus = value;
-            transform(bookStatus.begin(), bookStatus.end(), bookStatus.begin(), ::tolower);
-            transform(searchStatus.begin(), searchStatus.end(), searchStatus.begin(), ::tolower);
-            return bookStatus == searchStatus;
-        }
-        case 2: { // Library ID
-            int searchID = stoi(value);
-            return libraryID == searchID;
-        }
-        case 3: { // Loan Period
-            int searchPeriod = stoi(value);
-            return loanPeriod == searchPeriod;
-        }
-        default:
-            return false;
-    }
+void Book::PrintDetails(std::ostream& os) const {
+    const int titleWidth = 30;
+    const int authorWidth = 25;
+    const int categoryWidth = 15;
+
+    os << std::left 
+       << std::setw(10) << GetLibraryID()
+       << std::setw(titleWidth + 2) << truncate(GetBookTitle(), titleWidth)
+       << std::setw(authorWidth + 2) << truncate(GetAuthorName(), authorWidth)
+       << std::setw(15 + 2) << GetISBN()
+       << std::setw(categoryWidth + 2) << truncate(GetBookCategory(), categoryWidth)
+       << "$" << std::setw(11) << std::fixed << std::setprecision(2) << GetCost()
+       << std::setw(10) << GetStatus() << std::endl;
 }
 
 
-// Serialize book data to a string for file storage
-string Book::serialize() const {
-    stringstream ss;
-    ss << bookTitle << "|" << authorName << "|" << isbn << "|" 
-       << libraryID << "|" << cost << "|" << status << "|" << category << "|" << loanPeriod;
+std::string Book::serialize() const {
+    std::stringstream ss;
+    ss << bookTitle << "|" << authorName << "|" << isbn << "|" << category << "|"
+       << libraryID << "|" << cost << "|" << status << "|" << loanPeriod;
     return ss.str();
 }
 
+bool Book::deserialize(std::istream& is) {
+    std::string tempCost, tempID, tempPeriod;
 
-// Deserialize book data from a file
-bool Book::deserialize(istream& inFile) {
-    string line;
-    if (getline(inFile, line)) {
-        stringstream ss(line);
-
-        string tempISBN, tempLibraryID, tempBookCost, tempLoanPeriod;
-
-        getline(ss, bookTitle, '|');
-        getline(ss, authorName, '|');
-        getline(ss, tempISBN, '|');
-        getline(ss, tempLibraryID, '|');
-        getline(ss, tempBookCost, '|');
-        getline(ss, status, '|');
-        getline(ss, category, '|');
-        getline(ss, tempLoanPeriod);
-
-        isbn = stol(tempISBN);
-        libraryID = stoi(tempLibraryID);
-        cost = stod(tempBookCost);
-        loanPeriod = stoi(tempLoanPeriod);
-
-        return true;
+    if (std::getline(is, bookTitle, '|') &&
+        std::getline(is, authorName, '|') &&
+        std::getline(is, isbn, '|') &&
+        std::getline(is, category, '|') &&
+        std::getline(is, tempID, '|') &&
+        std::getline(is, tempCost, '|') &&
+        std::getline(is, status, '|') &&
+        std::getline(is, tempPeriod))
+    {
+        try {
+            libraryID = std::stoi(tempID);
+            cost = std::stod(tempCost);
+            loanPeriod = std::stoi(tempPeriod);
+            return true;
+        } catch (const std::exception&) {
+            // This can happen if the data is corrupt
+            return false;
+        }
     }
     return false;
 }

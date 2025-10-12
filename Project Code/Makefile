@@ -1,55 +1,43 @@
-# Makefile for Library Management System project
+# Makefile for Library Management System
 
-# Define object files
-OBJ_FILES = main.o Book.o AudioCD.o DVD.o Patron.o Patrons.o Loan.o Loans.o LibraryItem.o LibraryItems.o
+# Compiler and flags
+CXX = g++
+# Use C++17 standard, enable all warnings for better code quality
+CXXFLAGS = -std=c++17 -Wall -Wextra
+# Debug flags
+DEBUG_FLAGS = -g -DDEBUG
+# Executable name
+TARGET = main
 
-# Default target to build the executable
-main: $(OBJ_FILES)
-	g++ -o main $(OBJ_FILES)
+# Automatically find all .cpp files in the current directory
+SOURCES = $(wildcard *.cpp)
+# Generate corresponding .o object file names from the source file names
+OBJECTS = $(SOURCES:.cpp=.o)
 
-# Compilation rules for object files
-main.o: main.cpp LibraryClock.h Book.h AudioCD.h DVD.h Patron.h Patrons.h Loan.h Loans.h LibraryItem.h LibraryItems.h
-	g++ -c main.cpp
+# Default target: build the release version
+all: $(TARGET)
 
-Book.o: Book.cpp Book.h
-	g++ -c Book.cpp
+# Link the final executable
+$(TARGET): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
-AudioCD.o: AudioCD.cpp AudioCD.h
-	g++ -c AudioCD.cpp
+# Generic rule to compile any .cpp file into a .o file
+# $< is the first prerequisite (the .cpp file)
+# $@ is the target name (the .o file)
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
-DVD.o: DVD.cpp DVD.h
-	g++ -c DVD.cpp
+# Debug target: rebuilds with debug flags
+debug: CXXFLAGS += $(DEBUG_FLAGS)
+debug: clean all
 
-Patron.o: Patron.cpp Patron.h
-	g++ -c Patron.cpp
-
-Patrons.o: Patrons.cpp Patrons.h
-	g++ -c Patrons.cpp
-
-Loan.o: Loan.cpp Loan.h
-	g++ -c Loan.cpp
-
-Loans.o: Loans.cpp Loans.h
-	g++ -c Loans.cpp
-
-LibraryItem.o: LibraryItem.cpp LibraryItem.h
-	g++ -c LibraryItem.cpp
-
-LibraryItems.o: LibraryItems.cpp LibraryItems.h
-	g++ -c LibraryItems.cpp
-
-# Release target (non-debug build)
-release: $(OBJ_FILES)
-	g++ -o main $(OBJ_FILES)
-
-# Debug target (with debugging symbols)
-debug: $(OBJ_FILES)
-	g++ -Wall -DDEBUG -o main $(OBJ_FILES)
-
-# Cross-platform clean rule
+# Clean target: remove executable and object files
 clean:
 ifeq ($(OS),Windows_NT)
-	@cmd /C "del /Q main.exe *.o 2>nul || exit 0"
+	del /Q $(TARGET) *.o 2>nul || exit 0
 else
-	@rm -f main main.exe *.o
+	rm -f $(TARGET) $(OBJECTS)
 endif
+
+# .PHONY tells make that these are command names, not files
+.PHONY: all debug clean
