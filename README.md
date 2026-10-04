@@ -9,21 +9,31 @@ This was a class project for a UNT computer science course (CSCE). The repo incl
 ## Features
 
 * Three item types (Books, Audio CDs, and DVDs) that share a common `LibraryItem` base class
-* Patrons who can borrow items, with checked-out counts and fine balances
-* Loans that connect patrons to items, with due dates
-* Overdue tracking and fines, using a library clock to compare due dates to the current date
-* Searching and editing for items and patrons, plus paying fines and reporting lost items
+* Menu-driven console interface for managing items, patrons, and loans (see the menus below)
+* Loan tracking with overdue loans and patron fine balances
 * Data saved to and loaded from text files (`items.txt`, `patrons.txt`, `loans.txt`), one record per line
 
-The full list of operations is in the design document (`Design and Report Document/Design Document.pdf`).
+The design document (`Design and Report Document/Design Document.pdf`) describes the original design of the system.
+
+## Program Menus
+
+**Main menu:** Item Management, Patron Management, Loan Management, Save and Exit
+
+**Item Management:** Add New Item, Delete Item, Edit Item, Find Item, List All Items, List Specific Item
+
+**Patron Management:** Add New Patron, Edit Patron, Find Patron, List All Patrons, List Patrons with Fines, Pay Fines
+
+**Loan Management:** Check Out Item, Check In Item, List All Loans, List Overdue Loans, List Loans for a Patron
+
+Choose **Save and Exit** to write your changes back to the data files.
 
 ## Object-Oriented Design
 
-`LibraryItem` is an abstract base class. `Book`, `AudioCD`, and `DVD` inherit from it and implement its pure virtual functions, such as `GetItemType()`, `PrintHeader()`, `PrintDetails()`, `serialize()`, and `deserialize()`. Other functions (`InputDetails()`, `EditDetails()`, and `Matches()`) are virtual and can be overridden. The program uses these through base-class pointers, so one set of code handles all three item types, and each item type controls how it is saved and loaded.
+`LibraryItem` is an abstract base class. `Book`, `AudioCD`, and `DVD` inherit from it and implement its pure virtual functions, such as `GetItemType()`, `PrintHeader()`, `PrintDetails()`, `serialize()`, and `deserialize()`. Other functions (`InputDetails()`, `EditDetails()`, and `Matches()`) are virtual and can be overridden. Because `serialize()` and `deserialize()` are virtual, each item type controls how it is saved to and loaded from the data files.
 
 ## Sample Data
 
-The included data files hold sample records for testing: 358 items, 250 loans, and 241 patrons (about 850 records in total).
+The included data files hold sample records for testing: 358 items (167 books, 91 DVDs, and 100 audio CDs), 250 loans, and 241 patrons (about 850 records in total). Running the program and choosing **Save and Exit** rewrites these files.
 
 ## Project Structure
 
